@@ -6,19 +6,14 @@ var stripe = require('stripe')(
   require('./config.js').STRIPE_SK
 );
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res) {
-  serveFile('home.html', res);
-});
-
-app.get('/order', function(req, res) {
-  serveFile('order.html', res);
-});
-
-app.get('/transparency', function(req, res) {
-  serveFile('transparency.html', res);
+  serveFile('index.html', res);
 });
 
 app.get('/pay', function (req, res) {
+  console.log('Received pay');
   stripe.charges.create({
     amount: req.query.amount,
     currency: 'usd',
