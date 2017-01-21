@@ -1,4 +1,8 @@
 var COST = 500;
+var COOKIE_TEXTS = [
+  'Your revenue will increase by 30%',
+  'Be on the lookout for potential acquirers'
+];
 
 $(function() {
   var handler = StripeCheckout.configure({
@@ -36,4 +40,18 @@ $(function() {
     return false;
   });
 
+  var $text = $('#cookie-text');
+  function changeTextTo(idx) {
+    $text.fadeOut(400, function() {
+      $text.html(COOKIE_TEXTS[idx]).fadeIn();
+    })
+    idx++;
+    if (idx === COOKIE_TEXTS.length) {
+      idx = 0;
+    }
+    setTimeout(function() {
+      changeTextTo(idx);
+    }, 2500);
+  }
+  changeTextTo(0);
 });
