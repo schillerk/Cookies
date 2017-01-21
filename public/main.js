@@ -4,6 +4,7 @@ $(function() {
     token: function(token) {
       document.body.style.cursor='wait';
       $.get('/pay?email=' + token.email + '&tok=' + token.id + '&amount=500', function(resp) {
+        document.body.style.cursor='default';
         if (resp === 'ok') {
           alert('Thanks!');
         } else {
