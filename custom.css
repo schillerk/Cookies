@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+}
+
+body {
+      background-image: url(cookie2.jpg) ;
+      background-position: center center;
+      background-repeat:  no-repeat;
+      background-attachment: fixed;
+      background-size:  cover;
+      background-color: rgb(189, 231, 255);
+}
+
+div, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Cookie';
+  font-size: 35px;
+  text-align: center;
+  color: black;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+.rocket {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: -9px;
+  left: -9px;
+}
+
+.title-wrapper {
+  width: 100%;
+}
+
+.menu-wrapper {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+}
+
+.menu-item {
+  font-family: 'Raleway', sans-serif;
+  display: inline;
+  margin-right: 20px;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  color: #666;
+  -webkit-transition: .4s; /* Safari */
+  transition: .4s;
+}
+
+.menu-item:hover {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.testimonial-wrapper {
+  position: absolute;
+  top: calc(65px + 8vw);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+.testimonial {
+  width: 70%;
+  margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.attribution {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+}
+
+.button-inner{
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+.button1 {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 220px;
+  height: 40px;
+  bottom: 200px;
+  margin: 10px;
+  background: #333;
+  color: white;
+  -webkit-transition: .4s; /* Safari */
+  transition: .4s;
+}
+
+.button2 {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 220px;
+  height: 40px;
+  bottom: 200px;
+  margin: 10px;
+  -webkit-transition: .4s; /* Safari */
+  transition: .4s;
+}
+
+
+.button1:hover {
+  background: rgb(189, 231, 255);
+  color: #666;
+}
+
+.button2:hover {
+  background: rgb(189, 231, 255);
+  color: #666;
+}
