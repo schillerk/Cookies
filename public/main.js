@@ -51,7 +51,7 @@ $(function() {
     }
     setTimeout(function() {
       changeTextTo(idx);
-    }, 2500);
+    }, 4000);
   }
   changeTextTo(0);
 });
