@@ -6,7 +6,7 @@ var COOKIE_TEXTS = [
   'Seek coffee dates<br>with VC associates',
   'Your LinkedIn connections<br>admire you',
   'Time to upgrade<br>your Macbook',
-  'ProductHunt users love you',
+  'ProductHunt users<br>love you',
 ];
 
 $(function() {
