@@ -18,7 +18,7 @@ app.get('/pay', function (req, res) {
     amount: req.query.amount,
     currency: 'usd',
     source: req.query.tok,
-    description: 'Charge for micro carbon offset - ' + req.query.email,
+    description: 'Charge for startup cookies - ' + req.query.email,
   }, function(err, charge) {
     if (err) {
       console.log(err, charge);
