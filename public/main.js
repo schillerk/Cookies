@@ -1,7 +1,12 @@
 var COST = 500;
 var COOKIE_TEXTS = [
-  'Your revenue<br>will increase by 30%',
-  'Be on the lookout<br>for potential acquirers'
+  'Your conversion rate<br>will increase by 0.5%',
+  'Be on the lookout<br>for potential acquirers',
+  'Raise money now<br>for a superbowl ad',
+  'Seek coffee dates<br>with VC associates',
+  'Your LinkedIn connections<br>admire you',
+  'Time to upgrade<br>your Macbook',
+  'ProductHunt users love you',
 ];
 
 $(function() {
