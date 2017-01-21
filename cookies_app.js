@@ -12,13 +12,13 @@ app.get('/', function(req, res) {
   serveFile('index.html', res);
 });
 
-app.get('/pay', function (req, res) {
-  console.log('Received pay');
+app.post('/pay', function (req, res) {
+  console.log('Received pay', req.params);
   stripe.charges.create({
-    amount: req.query.amount,
+    amount: req.params.amount,
     currency: 'usd',
-    source: req.query.tok,
-    description: 'Charge for startup cookies - ' + req.query.email,
+    source: req.params.tok,
+    description: 'Charge for startup cookies - ' + req.params.email,
   }, function(err, charge) {
     if (err) {
       console.log(err, charge);
