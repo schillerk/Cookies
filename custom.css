@@ -25,8 +25,8 @@ h1 {
 
 .logo {
   position: absolute;
-  top: 10px;
-  left: 50px;
+  top: calc(10px + 1vw);
+  left: calc(10px + 3vw);
 }
 
 .rocket {
@@ -43,8 +43,8 @@ h1 {
 
 .menu-wrapper {
   position: absolute;
-  top: 45px;
-  right: 30px;
+  top: calc(45px + 1vw);
+  right: calc(10px + 3vw);
 }
 
 .menu-item {
@@ -91,7 +91,7 @@ h1 {
 }
 
 .button-inner{
-  width: 500px;
+  width: calc(294px + 10vw);
   margin: auto;
   text-align: center;
   line-height: 40px;
@@ -103,7 +103,7 @@ h1 {
   display: inline-block;
   border: 2px solid black;
   border-radius: 3px;
-  width: 220px;
+  width: calc(120px + 5vw);
   height: 40px;
   bottom: 200px;
   margin: 10px;
@@ -117,7 +117,7 @@ h1 {
   display: inline-block;
   border: 2px solid black;
   border-radius: 3px;
-  width: 220px;
+  width: calc(120px + 5vw);
   height: 40px;
   bottom: 200px;
   margin: 10px;
@@ -127,11 +127,26 @@ h1 {
 
 
 .button1:hover {
-  background: rgb(189, 231, 255);
+  background: rgb(239, 230, 170);
   color: #666;
 }
 
 .button2:hover {
-  background: rgb(189, 231, 255);
+  background: rgb(239, 230, 170);
   color: #666;
+}
+
+.testimonial {
+  width: 70%;
+  margin: auto;
+  font-size: calc(4px + 2vh + 1vw);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.fullscreen-buffer {
+  position: absolute:
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
