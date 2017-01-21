@@ -1,7 +1,7 @@
 var COST = 500;
 var COOKIE_TEXTS = [
-  'Your revenue will increase by 30%',
-  'Be on the lookout for potential acquirers'
+  'Your revenue<br>will increase by 30%',
+  'Be on the lookout<br>for potential acquirers'
 ];
 
 $(function() {
