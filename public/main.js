@@ -5,6 +5,13 @@ var COST3 = 12700;
 var COOKIE_TEXTS = [
   'Your revenue will increase by 30%',
   'Be on the lookout for potential acquirers',
+  'Your conversion rate<br>will increase by 0.5%',
+  'Be on the lookout<br>for potential acquirers',
+  'Raise money now<br>for a superbowl ad',
+  'Seek coffee dates<br>with VC associates',
+  'Your LinkedIn connections<br>admire you',
+  'Time to upgrade<br>your Macbook',
+  'ProductHunt users<br>love you',
 ];
 
 $(function() {
@@ -94,21 +101,6 @@ $(function() {
     });
     return false;
   });
-
-  var $text = $('#cookie-text');
-  function changeTextTo(idx) {
-    $text.fadeOut(400, function() {
-      $text.html(COOKIE_TEXTS[idx]).fadeIn();
-    })
-    idx++;
-    if (idx === COOKIE_TEXTS.length) {
-      idx = 0;
-    }
-    setTimeout(function() {
-      changeTextTo(idx);
-    }, 2500);
-  }
-  changeTextTo(0);
 });
 
 $(function() {
@@ -146,19 +138,4 @@ $(function() {
     });
     return false;
   });
-
-  var $text = $('#cookie-text');
-  function changeTextTo(idx) {
-    $text.fadeOut(400, function() {
-      $text.html(COOKIE_TEXTS[idx]).fadeIn();
-    })
-    idx++;
-    if (idx === COOKIE_TEXTS.length) {
-      idx = 0;
-    }
-    setTimeout(function() {
-      changeTextTo(idx);
-    }, 2500);
-  }
-  changeTextTo(0);
 });
