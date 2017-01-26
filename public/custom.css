@@ -19,38 +19,25 @@ div, body {
 h1 {
   font-family: 'Cookie';
   font-size: 35px;
-  text-align: center;
   color: black;
-}
-
-.logo {
-  position: absolute;
-  top: calc(10px + 1vw);
-  left: calc(10px + 3vw);
 }
 
 .rocket {
   width: 25px;
   height: 25px;
   position: relative;
-  top: -9px;
-  left: -9px;
+  top: -69px;
+  left: 159px;
 }
 
-.title-wrapper {
-  width: 100%;
-}
-
-.menu-wrapper {
-  position: absolute;
-  top: calc(45px + 1vw);
-  right: calc(10px + 3vw);
+.no-decoration {
+  text-decoration: none;
 }
 
 .menu-item {
   font-family: 'Raleway', sans-serif;
   display: inline;
-  margin-right: 20px;
+  margin: 10px;
   padding: 5px;
   border-bottom: 2px solid transparent;
   color: #666;
@@ -80,18 +67,18 @@ h1 {
 }
 
 .attribution {
-  font-size: 20px;
+  font-size: calc(2vw + 5px);
   font-weight: 300;
 }
 
 .buttons {
   position: absolute;
-  bottom: 150px;
+  bottom: calc(2vw + 2vh + 50px);
   width: 100%;
 }
 
 .button-inner{
-  width: calc(294px + 10vw);
+  width: 90%;
   margin: auto;
   text-align: center;
   line-height: 40px;
@@ -103,7 +90,7 @@ h1 {
   display: inline-block;
   border: 2px solid black;
   border-radius: 3px;
-  width: calc(120px + 5vw);
+  width: 250px;
   height: 40px;
   bottom: 200px;
   margin: 10px;
@@ -114,10 +101,11 @@ h1 {
 }
 
 .button2 {
+  color: black;
   display: inline-block;
   border: 2px solid black;
   border-radius: 3px;
-  width: calc(120px + 5vw);
+  width: 250px;
   height: 40px;
   bottom: 200px;
   margin: 10px;
@@ -127,13 +115,13 @@ h1 {
 
 
 .button1:hover {
-  background: rgb(239, 230, 170);
-  color: #666;
+  background: #2F688C;
+  color: white;
 }
 
 .button2:hover {
-  background: rgb(239, 230, 170);
-  color: #666;
+  background: #2F688C;
+  color: white;
 }
 
 .testimonial {
@@ -154,9 +142,376 @@ h1 {
 .cookie-text {
 	font-size: 10px;
 	color: red;
-	position: absolute;
+	position: fixed;
+  z-index: -1;
 	top: 45.5%;
 	left: 0;
 	width: 100%;
 	text-align: center;
+}
+
+.about-text {
+  position: relative;
+  top: 30px;
+  left: 50px;
+  width: 60%;
+  color: white
+}
+
+.elon-wrapper {
+  position: absolute;
+  /*top: 100%;*/
+  /*top: 600px;*/
+  height: 600px;
+  width: 100%;
+  /*min-height: 1000px;*/
+  overflow: hidden;
+}
+
+.elon {
+  width: auto;
+  height: auto;
+  position: relative;
+  right: calc(1600px - 67vw);
+}
+
+
+.about {
+  width: 100%;
+  background: white;
+  font-family: 'Raleway', sans-serif;
+  height: 600px;
+}
+
+.about-text-big {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.about-text-small {
+  font-size: 20px;
+}
+
+.pricing {
+  width: 100%;
+  background: white;
+}
+
+.pricing-title {
+  position: relative;
+  top: -180px;
+  color: black;
+  padding-bottom: 5px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.logo {
+  height: 50px;
+}
+
+@media screen and (min-width: 900px) {
+  .title-wrapper {
+    position: absolute;
+    top: calc(26px + 1vw);
+    left: calc(20px + 3vw);
+  }
+
+  .menu-wrapper {
+    position: absolute;
+    top: calc(45px + 1vw);
+    right: calc(10px + 3vw);
+  }
+
+  .title-wrapper2 {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .pricing-features {
+    position: relative;
+    top: -195px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .low-buy {
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .pricing-subtitle {
+    padding: 10px;
+  }
+
+  .pricing-number {
+    width: 250px;
+  }
+
+  .pricing-title {
+    padding: 20px;
+  }
+
+  .pricing-wrapper {
+    width: 884px;
+    margin: auto;
+    height: 800px;
+  }
+
+  .low {
+    margin: 20px;
+    margin-top: 110px;
+    display: inline-block;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 500px;
+    text-align: center;
+  }
+
+  .pricing-body{
+    position: relative;
+    top: -200px;
+    text-align: left;
+    padding-right: 15px;
+  }
+
+  .pricing-body-item {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  @media screen and (max-height: 500px) {
+    .buttons {
+      display: none;
+    }
+
+    .testimonial-wrapper {
+      position: absolute;
+      bottom: 40px;
+      top: inherit;
+    }
+  }
+  .title-wrapper {
+    position: absolute;
+    top: calc(26px + 1vw);
+    left: calc(20px + 3vw);
+  }
+
+  .menu-wrapper {
+    position: absolute;
+    top: calc(45px + 1vw);
+    right: calc(10px + 3vw);
+  }
+
+  .title-wrapper2 {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .pricing-features {
+    position: relative;
+    top: -385px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 270px;
+  }
+
+  .low-buy {
+    margin-left: 45px;
+  }
+
+  .pricing-subtitle {
+    padding: 0px;
+    padding-top: 10px;
+    width: 250px;
+  }
+
+  .pricing-number {
+    width: 250px;
+  }
+
+  .pricing-title {
+    text-align: center;
+    width: 250px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+
+  }
+
+  .pricing-wrapper {
+    width: 100%;
+    margin: auto;
+    height: 750px;
+    position: relative;
+    top: 50px;
+    background: white;
+  }
+
+  .low {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 180px;
+    text-align: center;
+  }
+
+  .pricing-body{
+    position: relative;
+    top: -400px;
+    text-align: left;
+    padding-right: 10px;
+    margin-left: 250px;
+  }
+
+  .pricing-body-item {
+    padding-top: calc(2vw - 4px);
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu-wrapper{
+    margin: auto;
+    display: block;
+    width: 260px;
+    top: 60px;
+    position: relative;
+    right: -8px;
+  }
+
+  .logo {
+    height: 50px;
+    margin: auto;
+    display: block;
+    top: 10px;
+    position: relative;
+  }
+
+  .title-wrapper {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .pricing-features {
+    position: relative;
+    top: -195px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .low-buy {
+    margin: auto;
+  }
+
+  .pricing-subtitle {
+    padding: 10px;
+    padding-top: 0px;
+    width: 230px;
+  }
+
+  .pricing-number {
+    width: 250px;
+  }
+
+  .pricing-title {
+    padding: 20px;
+    text-align: center;
+    width: 210px;
+  }
+
+  .pricing-wrapper {
+    width: 100%;
+    margin: auto;
+    height: 1850px;
+  }
+
+  .low {
+    margin: auto;
+    margin-bottom: 110px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 500px;
+    text-align: center;
+  }
+
+  .pricing-body{
+    position: relative;
+    top: -200px;
+    text-align: left;
+    padding-right: 10px;
+    margin-left: 0px;
+  }
+
+  .pricing-body-item {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+}
+
+.pricing-color{
+  width: 250px;
+  background: rgb(189, 231, 255);
+  height: 180px;
+}
+
+.dollar {
+  font-size: 16px;
+  position: relative;
+  bottom: 22px;
+  left: 18px;
+}
+
+.pricing-number {
+  font-size: 70px;
+  font-weight: 500;
+  position: relative;
+  top: -180px;
+  left: -10px;
+}
+
+.pricing-subtitle {
+  font-size: 14px;
+  position: relative;
+  top: -330px;
+  color: #333;
+  font-weight: 300;
+}
+
+.low-buy {
+  border-radius: 1px;
+  background: #2F688C;
+  color: white;
+  width: 160px;
+  height: 45px;
+  box-shadow: none;
+  top: -175px;
+  position: relative;
+  line-height: 47px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+  -webkit-transition: .4s; /* Safari */
+  transition: .4s;
+}
+
+
+.low-buy:hover {
+  box-shadow: 0px 8px 3px -4px black;
+  top: -180px;
 }

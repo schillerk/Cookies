@@ -1,26 +1,58 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
     <link href="custom.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Raleway:100,300,400,500,600,700,800,900" rel="stylesheet">
     <title>Startup Cookies</title>
   </head>
   <body>
     <div class="menu-wrapper">
-      <div class="menu-item">
-        About
-      </div>
-      <div class="menu-item">
-        FAQ
-      </div>
+      <a href="#about" class="no-decoration">
+          <div class="menu-item">
+          About
+        </div>
+      </a>
+      <a href="#pricing" class="no-decoration">
+        <div class="menu-item">
+          Order
+        </div>
+      </a>
+      <a href="http://www.zenysis.com/jobs" class="no-decoration">
+        <div class="menu-item">
+          Careers
+        </div>
+      </a>
     </div>
     <div class="title-wrapper">
-      <h1 class="logo">
-        Startup Cookies
-        <img src="rocket.png" class="rocket">
-      </h1>
+      <img src="logo.png" class="logo">
     </div>
     <div id="cookie-text" class="cookie-text">
     </div>
@@ -34,18 +66,145 @@
     </div>
     <div class="buttons">
       <div class="button-inner">
-        <div id="btn-order-now" class="button1">
-          ORDER NOW
-        </div>
-        <div class="button2">
-          LEARN MORE
-        </div>
+        <a href="#pricing" class="no-decoration">
+          <div class="button1">
+            ORDER NOW
+          </div>
+        </a>
+        <a href="#about" class="no-decoration">
+          <div class="button2">
+            LEARN MORE
+          </div>
+        </a>
       </div>
     </div>
 
     <div class="fullscreen-buffer">
     </div>
 
+    <div class="elon-wrapper">
+      <img src="elon-long.jpg" class="elon">
+    </div>
+
+    <div id="about" class="about">
+      <div class="about-text">
+        <div class="about-text-big">
+          Sweet, Crispy, and also Prophetic
+        </div>
+        <div class="about-text-small">
+          Whether you're the Uber of Snapchats or Netflix for C-level executives, we'll deliver the right fortunes for your business, tailored to your goals.
+        </div>
+      </div>
+    </div>
+
+    <div id="pricing" class="pricing">
+      <div class="pricing-wrapper">
+        <div class="low">
+          <div class="pricing-color">
+          </div>
+          <div class="pricing-title">
+            - Stealth -
+          </div>
+           <div class="pricing-number">
+            <span class="dollar">$</span>
+            20
+          </div>
+          <div  id="btn-order-now1" class="low-buy">
+            ORDER NOW
+          </div>
+          <div class="pricing-subtitle">
+            We'll help you get there.
+          </div>
+          <div class="pricing-features">
+            FEATURES
+          </div>
+          <ul class="pricing-body">
+            <li class="pricing-body-item">
+              32 individually-wrapped cookies
+            </li>
+            <li class="pricing-body-item">
+              Handcrafted advice guaranteed to help your startup succeed
+            </li>
+            <li class="pricing-body-item">
+              Encouragement from the depths of our hearts
+            </li>
+            <li class="pricing-body-item">
+              Predictions about the future
+            </li>
+          </ul>
+        </div>
+
+        <div class="low">
+          <div class="pricing-color">
+          </div>
+          <div class="pricing-title">
+            - Startup -
+          </div>
+           <div class="pricing-number">
+            <span class="dollar">$</span>
+            48
+          </div>
+          <div id="btn-order-now2" class="low-buy">
+            ORDER NOW
+          </div>
+          <div class="pricing-subtitle">
+            You're basically a real company.
+          </div>
+          <div class="pricing-features">
+            FEATURES
+          </div>
+          <ul class="pricing-body">
+            <li class="pricing-body-item">
+              100 individually-wrapped cookies
+            </li>
+            <li class="pricing-body-item">
+              All features awarded to Stealth tier customers
+            </li>
+            <li class="pricing-body-item">
+              Free shipping to the continental US
+            </li>
+            <li class="pricing-body-item">
+              Your name or company logo featured on our website
+            </li>
+          </ul>
+        </div>
+
+        <div class="low">
+          <div class="pricing-color">
+          </div>
+          <div class="pricing-title">
+            - Unicorn -
+          </div>
+           <div class="pricing-number">
+            <span class="dollar">$</span>
+            127
+          </div>
+          <div id="btn-order-now3" class="low-buy">
+            ORDER NOW
+          </div>
+          <div class="pricing-subtitle">
+            Time to spend the VC $$$.
+          </div>
+          <div class="pricing-features">
+            FEATURES
+          </div>
+          <ul class="pricing-body">
+            <li class="pricing-body-item">
+              400 individually-wrapped cookies
+            </li>
+            <li class="pricing-body-item">
+              All features awarded to Startup tier customers
+            </li>
+            <li class="pricing-body-item">
+              Your testimonial featured on our website
+            </li>
+            <li class="pricing-body-item">
+              Your photo photoshoped next to Elon on our website
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="https://checkout.stripe.com/v2/checkout.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <script src="main.js"></script>

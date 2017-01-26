@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "latest",
+    "smoothscroll": "^0.3.0",
     "stripe": "latest"
   }
 }
